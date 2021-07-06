@@ -1,0 +1,62 @@
+#one {
+    background-color: brown;
+    border: 1px solid rgb(255, 102, 0);
+}
+
+#two {
+    background-color: rgb(67, 165, 42);
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.hero {
+    min-height: 85vh;
+    background: url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+h2 {
+    color: white;
+    text-shadow: 1px 0 10px black;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+h3 {
+    color: white;
+    text-shadow: 1px 0 10px black;
+    text-align: center;
+    font-size: 2,5em;
+}
+
+.block {
+    align-self: center;
+    height: 10em;
+    color: rgb(255, 102, 0);
+    text-shadow: 1px 1px black, -1px -1px 5px black;
+    background-color: rgba(255,255,255,0.2);
+    border: 3px solid rgb(255, 102, 0);
+    outline: 5px solid rgba(255,255,255,0.2);
+    text-align: center;
+    transition: color 0.4s ease, background-color 0.4s ease, border 0.4s ease, outline 0.4s ease;
+}
+
+.block:hover {
+    color: rgba(255,255,255);
+    background: rgba(255, 102, 0, 0.3);
+    border: 3px solid rgba(255,255,255,0.6);
+    outline: 5px solid rgba(255, 102, 0, 0.3);
+    transition: color 0.4s ease, background-color 0.4s ease, border 0.4s ease, outline 0.4s ease;
+}
+
+.block svg {
+    margin-top: 10px;
+}
+
+.navbar {
+    min-height: 10vh;
+}
+
+#flower {
+    min-height: 80vh;
+    background: url(https://cdn.pixabay.com/photo/2021/02/27/22/19/plant-6055943_960_720.jpg);
+    background-size: cover;
+}
