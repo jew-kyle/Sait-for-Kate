@@ -1,3 +1,8 @@
+body {
+    padding: 0;
+    margin: auto;
+}
+
 #one {
     background-color: brown;
     border: 1px solid rgb(255, 102, 0);
@@ -9,7 +14,7 @@
 }
 
 .hero {
-    min-height: 85vh;
+    min-height: 100vh;
     background: url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
@@ -55,8 +60,21 @@ h3 {
     min-height: 10vh;
 }
 
+.grid-box {
+    padding-right: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
+}
+
+.grid-row p{
+    
+}
+
 #flower {
-    min-height: 80vh;
-    background: url(https://cdn.pixabay.com/photo/2021/02/27/22/19/plant-6055943_960_720.jpg);
-    background-size: cover;
+    padding: 0;
+    overflow: hidden;
+}
+
+#flower img{
+    height: 100%;
 }
