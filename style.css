@@ -1,6 +1,12 @@
 body {
     padding: 0;
-    margin: auto;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #one {
@@ -15,7 +21,7 @@ body {
 
 .hero {
     min-height: 100vh;
-    background: url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background: no-repeat url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
 }
 
 h2 {
