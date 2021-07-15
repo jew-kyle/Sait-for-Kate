@@ -85,8 +85,11 @@ h3 {
     height: 100%;
 }
 
-.testingForm {
+.form {
     width: 30%;
-    height: auto;
-    
+    height: auto;   
+}
+
+.invalid-feedback {
+    font-size: smaller;
 }
