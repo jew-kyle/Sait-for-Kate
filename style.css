@@ -24,14 +24,14 @@ body {
     background: no-repeat url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
 }
 
-h2 {
+#title {
     color: white;
     text-shadow: 1px 0 10px black;
     text-align: center;
     font-size: 3.5em;
 }
 
-h3 {
+#quest {
     color: white;
     text-shadow: 1px 0 10px black;
     text-align: center;
@@ -68,12 +68,35 @@ h3 {
 
 .grid-box {
     padding-right: 0;
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
 }
 
-.grid-row p{
-    
+.info {
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.grid-row {
+    display: flex;
+}
+
+.grid-row > p, .grid-row > button {
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.grid-row h3 {
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.grid-row button {
+    align-self: flex-start;
+}
+
+#info-btn {
+    margin-bottom: 10%;
 }
 
 #flower {
@@ -85,6 +108,23 @@ h3 {
     height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+      
+    .grid-row button {
+        align-self: center;
+    }
+
+    #flower {
+        max-height: 35vh;
+    }
+
+    #flower img{
+        width: 100%;
+    }
+}
+
+
+
 .form {
     width: 30%;
     height: auto;   
@@ -92,4 +132,18 @@ h3 {
 
 .invalid-feedback {
     font-size: smaller;
+}
+
+.info_name {
+    font: normal normal bold 42px/1.3em 'arial black',arial-w01-black,arial-w02-black,'arial-w10 black',sans-serif;
+}
+
+.line {
+    margin-left: 20%;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    align-self: flex-end;
+    border-radius: 15px;
+    margin-top: 10%;
 }
