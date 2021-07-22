@@ -134,7 +134,7 @@ body {
     font-size: smaller;
 }
 
-.info_name {
+.info-name {
     font: normal normal bold 42px/1.3em 'arial black',arial-w01-black,arial-w02-black,'arial-w10 black',sans-serif;
 }
 
@@ -145,5 +145,96 @@ body {
     background-color: black;
     align-self: flex-end;
     border-radius: 15px;
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.info-block {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+section {
+    margin-top: 0;
+    padding-top: 0;
+    min-height: 80vh;
+    color: white;
+    background: no-repeat url(https://images.pexels.com/photos/3656989/pexels-photo-3656989.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
+}
+
+/*.order-info {
+
+*/}
+
+.order-info > h3 {
+    margin-left: 20%;
+}
+
+.order-info > .line {
+    background-color: white;
+}
+
+.order-menu {
+    height: inherit;
+    text-align: center;
+}
+
+.order-preview {
+    margin: 3% auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-preview-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.order-preview-panel {
+    border-bottom: 1px solid #fd7200;
+    width: 50%;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.order-line {
+    margin: 0;
+    width: 50%;
+    height: 30px;
+    color: #fd7e14;
+    padding-top: 5px;
+    align-self: flex-start;
+    position: relative;
+    left: 0%;
+    opacity: 1;
+    transition: left .7s ease;
+}
+
+.order-line:active {
+    left: 50%;
+}
+
+.order-tabs {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
+}
+
+.order-tab {
+    border: 2px solid black;
+    border-bottom: none;
+    width: 200px;
+    height: 50px;
+    margin: 0 1px;
+    position: relative;
+    top: 2px;
+    background-color: white;
+
+}
+
+.orders {
+    border-top: 2px solid black;
 }
