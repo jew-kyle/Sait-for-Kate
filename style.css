@@ -1,12 +1,38 @@
-body {
+* {
     padding: 0;
     margin: 0;
 }
 
+/**,
+*::before,
+*::after {
+    /*box-sizing: inherit;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 120%;
+}
+
+@media (width: 400px) {
+
+}
+
+
+body {
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
 .row {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+}
+
+.navbar-menu {
+    justify-content: space-between;
 }
 
 #one {
@@ -22,6 +48,7 @@ body {
 .hero {
     min-height: 100vh;
     background: no-repeat url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
+    background-size: cover;
 }
 
 #title {
@@ -100,30 +127,9 @@ body {
 }
 
 #flower {
-    padding: 0;
-    overflow: hidden;
+    background: no-repeat url(https://cdn.pixabay.com/photo/2020/03/13/14/06/dead-sea-4927978_960_720.jpg);
+    background-size: cover;
 }
-
-#flower img{
-    height: 100%;
-}
-
-@media screen and (max-width: 600px) {
-      
-    .grid-row button {
-        align-self: center;
-    }
-
-    #flower {
-        max-height: 35vh;
-    }
-
-    #flower img{
-        width: 100%;
-    }
-}
-
-
 
 .form {
     width: 30%;
@@ -132,10 +138,6 @@ body {
 
 .invalid-feedback {
     font-size: smaller;
-}
-
-.info-name {
-    font: normal normal bold 42px/1.3em 'arial black',arial-w01-black,arial-w02-black,'arial-w10 black',sans-serif;
 }
 
 .line {
@@ -156,14 +158,11 @@ body {
 section {
     margin-top: 0;
     padding-top: 0;
-    min-height: 80vh;
+    min-height: 60vh;
     color: white;
     background: no-repeat url(https://images.pexels.com/photos/3656989/pexels-photo-3656989.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
+    background-size: cover;
 }
-
-/*.order-info {
-
-}*/
 
 .order-info > h3 {
     margin-left: 20%;
@@ -237,4 +236,26 @@ section {
 
 .orders {
     border-top: 2px solid black;
+}
+
+/*  Media-queries   */
+
+@media screen and (max-width: 740px) {
+      
+    .hero {
+        background-attachment: scroll;
+    }
+    
+    .grid-row button {
+        align-self: center;
+    }
+
+    #flower {
+        min-height: 300px;
+    }
+
+    section {
+        background-attachment: scroll;
+    }
+
 }
