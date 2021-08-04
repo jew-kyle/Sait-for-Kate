@@ -271,8 +271,7 @@ section {
     background: 
         url('https://images.pexels.com/photos/2647376/pexels-photo-2647376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
         center center no-repeat;
-    background-size: cover;
-    transition: background .8s;
+    background-size: 100%;
 }
   
 
@@ -280,7 +279,7 @@ section {
     background: 
         url('https://images.pexels.com/photos/2647376/pexels-photo-2647376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
         center center no-repeat;
-    background-size: 2000px;
+    background-size: 200%;
 }
 
 .icons {
