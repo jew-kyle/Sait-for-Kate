@@ -15,36 +15,41 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .row {
     width: 100%;
     margin: 0;
+}
+
+.navbar {
+    /*background-color: #e3f2fd;*/
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 1px 1px black, -1px -1px 5px black;
 }
 
 .navbar-menu {
     justify-content: space-between;
 }
 
-#one {
-    background-color: brown;
-    border: 1px solid rgb(255, 102, 0);
-}
-
-#two {
-    background-color: rgb(67, 165, 42);
-    border: 1px solid rgb(0, 153, 255);
-}
-
 .hero {
-    min-height: 100vh;
-    background: no-repeat url(https://images.pexels.com/photos/3591557/pexels-photo-3591557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
+    min-height: 80vh;
+    background: 
+        no-repeat 
+        url(https://images.unsplash.com/photo-1585597985125-9ad0229ae71d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80) 
+        fixed center center;
     background-size: cover;
+    justify-content: center;
 }
 
-#title {
+.main-title {
     color: white;
     text-shadow: 1px 0 10px black;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 #quest {
@@ -52,6 +57,7 @@ body {
     text-shadow: 1px 0 10px black;
     text-align: center;
     font-size: 2,5em;
+    font-style: italic;
 }
 
 .block {
@@ -116,18 +122,18 @@ body {
 }
 
 #flower {
-    background: no-repeat url(https://cdn.pixabay.com/photo/2020/03/13/14/06/dead-sea-4927978_960_720.jpg);
+    background: no-repeat url(/img/pollina.lobanova-88.jpg) top 50% center;
     background-size: cover;
 }
 
-.form {
+/*.form {
     width: 30%;
     height: auto;   
 }
 
 .invalid-feedback {
     font-size: smaller;
-}
+}*/
 
 .line {
     margin-left: 20%;
@@ -147,10 +153,14 @@ body {
 section {
     margin-top: 0;
     padding-top: 0;
-    min-height: 60vh;
+    min-height: 50vh;
     color: white;
-    background: no-repeat url(https://images.pexels.com/photos/3656989/pexels-photo-3656989.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center center;
-    background-size: cover;
+    text-shadow: 1px 1px black, -1px -1px 5px black;
+    background: 
+        no-repeat 
+        url(https://images.unsplash.com/photo-1517757910079-f57fd7f49a91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80) 
+        fixed;
+    background-size: 100% 100%;
 }
 
 .order-info > h3 {
@@ -159,7 +169,8 @@ section {
 
 .order-info > .line {
     background-color: white;
-    margin-bottom: 3%;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px black, -1px -1px 5px black;
 }
 
 .order-menu {
@@ -233,6 +244,7 @@ section {
 /*  Card test   */
 
 .card-holder {
+    padding: 0;
     height: 500px;
     display: flex;
 }
@@ -255,10 +267,13 @@ section {
 
 .border {
     height: 369px;
-    width: 88%;
+    width: 95%;
     background: transparent;
     transition: border 1s;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
   
 
@@ -266,33 +281,84 @@ section {
     border: 1px solid white;
 }  
 
+/*.border > h2 {
+
+}*/
+
 .card0 {
-    text-shadow: 1px 1px black, -1px -1px 5px black;
+    text-shadow: 1px 1px black, -1px -1px 3px black;
     background: 
         url('https://images.pexels.com/photos/2647376/pexels-photo-2647376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
         center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.card1 {
+    text-shadow: 1px 1px black, -1px -1px 3px black;
+    background: 
+        url('https://images.pexels.com/photos/3184160/pexels-photo-3184160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
+        center center no-repeat;
+    background-size: cover;
+}
+
+.card2 {
+    text-shadow: 1px 1px black, -1px -1px 3px black;
+    background: 
+        url('https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
+        center center no-repeat;
+    background-size: cover;
 }
   
-
-.card0:hover {
+.card3 {
+    text-shadow: 1px 1px black, -1px -1px 3px black;
     background: 
-        url('https://images.pexels.com/photos/2647376/pexels-photo-2647376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
+        url('https://images.pexels.com/photos/1346184/pexels-photo-1346184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
         center center no-repeat;
-    background-size: 200%;
+    background-size: cover;
+}
+
+.check-btn {
+    width: 150px;
+    height: 70px;
+    color: white;
+    border: none;
+    background-color: rgb(199, 129, 0);
+    border-radius: 5px;
+    transition: background, color, border 0.8s easy;
+}
+
+.check-btn:hover {
+    font-weight: bolder;
+    text-shadow: 1px 1px black, -1px -1px 3px black;
+    color: rgb(199, 129, 0);
+    border: 2px solid rgb(199, 129, 0);
+    background-color: rgba(255, 166, 0, 0.267);
 }
 
 .icons {
-    position: absolute;
     fill: #fff;
     color: #fff;
-    height: 130px;
-    top: 226px;
-    width: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
+}
+
+.icons > a {
+    padding-top: 5%;
+    padding-right: 3%;
+    font-size: 2em;
+    color: #fff;
+}
+
+.contacts {
+    color: white;
+}
+
+.contacts > .line {
+    margin-left: 0;
+    margin-bottom: 2%;
+    width: 50%;
+    background-color: white;
+    
 }
 
 /*  Media-queries   */
@@ -343,6 +409,10 @@ section {
 
     .order-info > .line {
         margin-top: 10%;
+    }
+
+    .contacts > .info-name {
+        font-size: 1.8em;
     }
 
 }
